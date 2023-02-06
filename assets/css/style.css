@@ -1,0 +1,909 @@
+/*>=======================
+Template URI: http://theme.codeastrology.com/shamko
+Description: Shamko – Personal Portfolio HTML Template.is a clean, creative, unique template for Agency And Personal Portfolio websites. It was nice, clean and user-friendly design. the template is based on 1170 Bootstrap based design so this Template will be 100% fluid responsive. Anyone can use this template to showcase his personal portfolio works so If you are wondering to build your personal website, this template might help you. Everything is in the Documentation file so that you can change anything easily.
+Author URI: https://codecanyon.net/user/codeastrology
+Version: 1.0
+=========================<*/
+
+/*>=======================
+	CSS Index
+==========================
+01. Default css
+02. header_area css
+03. header_banner section css
+04. shamko_about section css
+05. shamko_service section css
+06. shamko_skill section css
+07. shamko_portfolio section css
+08. shamko_testimonial section css
+09. shamko_blog section css
+10. shamko_contact section css
+11. shamko_footer css
+12. scroll_top css
+13. Preloader css
+=========================<*/
+
+/*>=======================
+	01.Start Default css
+=========================<*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Raleway:400,600,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	/*color: #fff;*/
+	text-decoration: none;
+}
+a:hover,
+a:focus{
+	color: #c7c41c;
+	text-decoration: none;
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	font-size: 64px;
+	font-weight: bold;
+}
+h2{
+	font-size: 48px;
+	font-weight: bold;
+}
+h3{
+	font-size: 30px;
+	font-weight: 500;
+}
+h4{
+	font-size: 24px;
+	font-weight: 500;
+}
+h5{
+	font-size: 18px;
+	font-weight: 500;
+}
+h6{
+	font-size: 16px;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+input,
+select,
+textarea{
+	border: none;
+	outline: none;
+}
+button{
+	border: none;
+	cursor: pointer;
+}
+button,
+button:hover,
+button:focus{
+	outline: none;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	color: #ffffff;
+	overflow-x: hidden;
+}
+.section_padding{
+	padding: 120px 0;
+}
+.dark_bg{
+	background-color: #000000;
+}
+.black_bg{
+	background-color: #121213;
+}
+.section_title{
+	margin-bottom: 60px;
+}
+.shamko_portfolio .section_title h2,
+.shamko_service .section_title h2{
+	margin-top: -5px;
+}
+.shamko_blog .section_title h2,
+.shamko_contact .section_title h2{
+	margin-top: -10px;
+}
+.dark_title h2{
+	color: #fff;
+	position: relative;
+}
+.section_title h2:after{
+	display: block;
+	content: '';
+	width: 100px;
+  	height: 5px;
+  	background-color: #c7c41c;
+  	margin: 19px auto 0;
+}
+
+.sectiona_title h2:after{
+	display: block;
+	content: '';
+	width: 100px;
+  	height: 5px;
+  	background-color: #c7c41c;
+  	margin: 19px auto 0;
+}
+.content_title h2{
+	position: relative;
+	color: #fff;
+}
+.content_title h2:after{
+	display: block;
+	content: '';
+	width: 100px;
+  	height: 5px;
+  	background-color: #c7c41c;
+  	margin: 19px 0 15px;
+}
+@media (min-width: 1200px){
+	.container{
+	    max-width: 1200px;
+	}
+}
+/*>======================
+	End Default css
+=========================<*/
+
+/*>============================
+	02.Start header_area css
+==============================<*/
+.header_area{
+	background-color: #000000;
+	border-bottom: 1px solid #000000;
+	z-index: 337;
+}
+.transparent_header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: transparent;
+	border-bottom: 1px solid #000000;
+}
+.header_area.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #00000093;
+	border-color: #0000008a;
+}
+.site_menu{
+	padding: 30px 0;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.shamko_menu{
+	float: right
+}
+.shamko_menu .main_menu ul li{
+	display: inline-block;
+	position: relative;
+	margin-left: 30px;
+}
+.shamko_menu .main_menu ul li a{
+	position: relative;
+	display: block;
+	padding: 17px 0px 18px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: capitalize;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.shamko_menu .main_menu ul li:hover a{
+	color: #c7c41c;
+}
+.shamko_menu .main_menu ul li.active a{
+	color: #c7c41c;
+}
+/* Mobile menu */
+.sticky.mobile_wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.mobile_wrapper{
+	display: none;
+	padding: 20px 0;
+}
+.menu_button {
+    float: right;
+}
+.menu_icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 4px 0 2px;
+    transition: all .5s;
+}
+.menu_icon.open span:nth-child(1){
+	transform: rotate(45deg) translateY(5px);
+}
+.menu_icon.open span:nth-child(3){
+	transform: rotate(-45deg) translateY(-5px);
+}
+.menu_icon.open span:nth-child(2){
+	display: none;
+}
+.sidenav_menu{
+	overflow: hidden;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+    z-index: 9999;
+    background: #000000;
+    overflow: auto;
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-webkit-transition: -webkit-transform 0.6s ease;
+	transition: transform 0.6s ease;
+}
+.sidenav_menu.open{
+  	transform: translateX(0);
+  	-webkit-transform: translateX(0);
+  	-ms-transform: translateX(0);
+  	transform: translateX(0);
+}
+.sidenav_menu .site_logo{
+	padding: 0 20px;
+	margin-bottom: 40px;
+}
+.times_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.times_icon i{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #fff;
+	color: #000000;
+	font-size: 16px;
+}
+.sidebar-menu li a {
+	display: block;
+	font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.sidebar-menu li.active a{
+	color: #c7c41c;
+}
+.sidebar-menu li a:hover,
+.sidebar-menu li a:focus{
+	color: #c7c41c;
+}
+/*>=======================
+	End header_area css
+=========================<*/
+
+/*>=================================
+	03.Start header_banner section css
+====================================<*/
+.header_banner{
+	padding-top: 288px;
+	padding-bottom: 160px;
+	position: relative;
+	z-index: 1;
+}
+#particles-js{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.video_banner .shamko_overlay{
+	opacity: .6;
+}
+.welcome_content{
+	position: relative;
+	z-index: 1;
+	margin-top: 5px;
+	margin-bottom: 17px;
+}
+.welcome_content h1{
+	margin-bottom: 34px;
+	color: #c7c41c;
+}
+.welcome_content h2{
+	margin-bottom: 34px;
+	color: #fff;
+}
+.welcome_content h4{
+	font-size: 24px;
+	line-height: 34px;
+	color: #fff;
+	font-family: 'Raleway';
+	margin-bottom: 56px;
+}
+.shamko_img_box{
+	position: relative;
+}
+.welcome_img .shamko_img{
+	position: relative;
+}
+.shamko_btn {
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: black ;
+    background-color: #c7c41c ;
+    border-radius: 6px;
+    line-height: 60px;
+    height: 60px;
+    width: 180px;
+	font-weight: bolder;
+    text-align: center;
+    transition: all .5s;
+}
+.shamko_btn:hover,
+.shamko_btn:focus{
+	color: black;
+	background-color: #858312;
+}
+.header_banner_1 .welcome_img{
+	position: relative;
+	max-width: 561px;
+	max-height: 562px;
+}
+.welcome_img .shamko_img #bg_shape{
+	position: absolute;
+    right: -35px;
+    top: 5px;
+	z-index: -1;
+}
+/*>===============================
+	End header_banner section css
+==================================<*/
+
+/*>======================================
+	04.Start shamko_about section css
+=========================================<*/
+.shamko_portfolio,
+.shamko_service,
+.shamko_about_us{
+    padding: 119px 0 120px;
+}
+.shamko_skill{
+    padding: 120px 0 119px;
+}
+
+.image_fluid{
+	width: 500px;
+	height: 500px;
+}
+.shamko_about_us .shamko_img_box{
+	position: relative;
+}
+.shamko_about_us .shamko_img_box .shamko_img{
+	
+	position: relative;
+	z-index: 1;
+}
+.shamko_about_us .shamko_img_box .shamko_img:after{
+	position: absolute;
+	content: '';
+	width: 92.983%;
+	height: 100%;
+	left: -30px;
+	top: 30px;
+	border: 8px solid #c7c41c;
+	border-radius: 40px;
+	z-index: -1;
+}
+
+.header_banner .shamko_img_box .shamko_img:after{
+	position: absolute;
+	content: '';
+	width: 48.983%;
+	height: 100%;
+	left: 73px;
+	top:30px;
+	border: 8px solid #c7c41c;
+	border-radius: 20px;
+	z-index: -1;
+	transform: rotate(45deg);
+}
+
+.header_banner .shamko_img_box .shamko_img img{
+	transform: rotate(45deg);
+	margin-left: 70px;
+	border-radius: 20px;
+	width: 50%;
+	height: 50%;
+}
+
+.shamko_about_us .shamko_img_box .shamko_img img{
+	border-radius: 20px;
+}
+.shamko_about_us .shamko_img_box .experience_box{
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -75px;
+	width: 150px;
+ 	height: 150px;
+  	background-color: #c7c41c;
+  	text-align: center;
+  	padding-top: 31px;
+    padding-bottom: 31px;
+  	z-index: 1;
+}
+
+
+.shamko_about_us .shamko_content_box {
+    display: table;
+    margin-top: -5px;
+}
+.shamko_about_us .shamko_content_box p,
+.shamko_about_us .shamko_content_box h2{
+	color: #fff;
+}
+.shamko_about_us .shamko_content_box h2:after{
+	display: block;
+	content: '';
+	width: 100px;
+  	height: 5px;
+  	background-color: #c7c41c;
+  	margin-top: 19px;
+  	margin-bottom: 53px;
+}
+.shamko_about_us .shamko_content_box p{
+	margin-bottom: 29px;
+	display: inline-table;
+}
+.shamko_about_us .about_information{
+	margin-top: 19px;
+}
+.shamko_about_us .about_information .info_list p{
+	margin-bottom: 16px;
+	font-family: 'Poppins';
+}
+.shamko_about_us .about_information .info_list p i{
+	color: #c7c41c;
+	margin-right: 10px;
+}
+.shamko_about_us .about_information .info_list p a{
+	color: #fff;
+}
+.shamko_about_us .shamko_content_box .shamko_btn{
+	margin-top: 39px;
+	margin-right: 35px;
+}
+.shamko_about_us .shamko_content_box .active_btn{
+	background-color: #c7c41c;
+	/* border: 1px solid #fff; */
+}
+.shamko_about_us .shamko_content_box .active_btn:hover{
+	background-color: #c7c41c;
+	border-color: #c7c41c;
+}
+/*>=================================
+	End portfolio_about section css
+====================================<*/
+
+/*>==========================================
+	05.Start shamko_service section css
+=============================================<*/
+.shamko_service{
+	margin-bottom: -60px;
+}
+.shamko_service .service_box{
+	background-color: black;
+	padding: 60px 45px 53px;
+	text-align: center;
+	margin-bottom: 60px;
+	transition: all .2s;
+	border-radius: 10px;
+
+}
+.shamko_service .service_box:hover{
+	background-color: #c7c41c;
+	color: black;
+}
+.shamko_service .service_box:hover .service_icon i,
+.shamko_service .service_box:hover .service_info a.shamko_link{
+	color: black;
+}
+.shamko_service .service_box .service_icon i{
+	font-size: 32px;
+	margin-bottom: 36px;
+	color: #c7c41c;
+}
+.shamko_service .service_box .service_info h4{
+	margin-bottom: 23px;
+	font-weight: 600;
+}
+.shamko_service .service_box .service_info p{
+	margin-bottom: 18px;
+}
+.shamko_service .service_box .service_info a.shamko_link{
+	text-decoration: underline;
+	color: #c7c41c;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+/*>=======================================
+	End shamko_service section css
+==========================================<*/
+
+/*>===================================
+	06. Start shamko_skill section css
+======================================<*/
+.skill_box {
+	text-align: center;
+}
+.skill_box .chart_1 {
+	border-radius: 10px;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 32px;
+    color: #fff;
+}
+.skill_box canvas{
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+.skill_box h4{
+	font-family: 'Raleway';
+	font-weight: 400;
+	color: #fff;
+	margin-top: 36px;
+}
+/*>==================================
+	End shamko_skill section css
+=====================================<*/
+
+/*>===========================================
+	07. Start shamko_portfolio section css
+=============================================<*/
+.testimonial_main{
+	position: relative;
+}
+.qoute{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.portfolio_slider_1{
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 75px;
+	outline: none;
+}
+.single_portfolio{
+	position: relative;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.single_portfolio .shamko_img{
+    position: relative;
+    overflow: hidden;
+}
+.single_portfolio:hover .overlay_img{
+	opacity: .7;
+	visibility: visible;
+}
+.single_portfolio:hover .overlay_content{
+	opacity: 1;
+	visibility: visible;
+}
+.portfolio_slider_1 .overlay_img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 89.46%;
+  	height: 89.46%;
+  	background-color: #000;
+  	opacity: 0;
+  	visibility: hidden;
+  	transition: all .2s;
+}
+.portfolio_slider_1 .overlay_content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+}
+.portfolio_slider_1 .overlay_content a{
+	color: #fff;
+}
+.portfolio_slider_1 .overlay_content h4{
+	font-family: 'Raleway';
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 30px;
+    margin-top: -4px;
+}
+.portfolio_slider_1 .overlay_content a.overlay_btn{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    outline: none;
+}
+.portfolio_slider_1 .overlay_content a.overlay_btn:hover,
+.portfolio_slider_1 .overlay_content a.overlay_btn:focus{
+	background-color: #c7c41c;
+	color: #fff;
+	border-color: #c7c41c;
+}
+.portfolio_slider_1 .slick-dots {
+	bottom: -75px;
+}
+/*>===================================
+	End shamko_portfolio section css
+======================================<*/
+
+/*>===========================================
+	08.Start shamko_testimonial section css
+=============================================<*/
+.shamko_testimonial .content_title{
+	margin-bottom: 53px;
+}
+.shamko_testimonial .content_title h2:after{
+	margin: 31px 0 0;
+}
+.testimonial_title{
+	margin-bottom: 60px;
+}
+.testimonial_title h2{
+	position: relative;
+	color: #fff;
+}
+.testimonial_title h2:after{
+	content: '';
+	display: block;
+	width: 100px;
+	width: 100px;
+  	height: 5px;
+  	background-color: #c7c41c;
+  	margin-top: 29px;
+}
+.testimonial_text{
+	outline: none;
+	padding-bottom: 28px;
+	border-bottom: 1px solid #505050;
+	margin-left: 1px;
+	margin-bottom: 60px;
+}
+.testimonial_text p{
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 32px;
+}
+.testimonial_text h4{
+	color: #fff;
+	font-weight: 600;
+}
+.testimonial_text h4 span{
+	font-weight: 400;
+	font-size: 16px;
+}
+.testimonial_author_slide{
+	outline: none;
+}
+.testimonial_author_slide .shmako_img{
+	position: relative;
+	text-align: center;
+	outline: none;
+}
+.testimonial_author_slide .shmako_img img{
+	outline: none;
+}
+.testimonial_review_slide .slick-prev:before{
+	content: '\f104';
+}
+.testimonial_review_slide .slick-next:before{
+	content: '\f105';
+}
+.testimonial_review_slide .slick-prev:before,
+.testimonial_review_slide .slick-next:before{
+	font-family: 'Font Awesome 5 Free';
+	font-size: 24px;
+	color: #fff;
+	font-weight: 900;
+}
+.testimonial_review_slide .slick-prev {
+    left: 94.5%;
+    bottom: -5px;
+}
+.testimonial_review_slide .slick-next {
+    right: 0;
+   	bottom: -5px;
+}
+.testimonial_review_slide .slick-prev:hover:before,
+.testimonial_review_slide .slick-next:hover:before{
+	color: #c7c41c;
+}
+/*>=========================================
+	End shamko_testimonial section css
+===========================================<*/
+
+/*>======================================
+	Start shamko_breadcrumb section css
+=========================================<*/
+.shamko_breadcrumb{
+	padding: 152px 0 155px;
+}
+.bg_image{
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.shamko_overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .8;
+}
+.breadcrumb_content{
+	position: relative;
+}
+.breadcrumb_content h2{
+	color: #fff;
+	margin-bottom: 13px;
+}
+.breadcrumb_content ul li{
+	display: inline-block;
+}
+.breadcrumb_content ul li a{
+	color: #fff;
+}
+.breadcrumb_content ul li:after{
+	margin-left: 13px;
+	margin-right: 9px;
+	content: '|';
+	display: inline-block;
+}
+.breadcrumb_content ul li:last-child:after{
+	display: none;
+}
+.breadcrumb_content ul li.active{
+	color: #fff;
+}
+/*>======================================
+	End shamko_breadcrumb section css
+=========================================<*/
+
+/*>=============================
+	12. Start scroll_top css
+================================<*/
+#scroll_top {
+	border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    display: none;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #c7c41c !important;
+    text-align: center;
+    font-size: 20px;
+    color: black !important;
+    z-index: 337;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+/*>======================================
+	End scroll_top css
+========================================<*/
+
+/*>==============================
+	13. Start Preloader css
+===============================<*/
+.preloader_area{
+	/* background: #fff; */
+	background-color: #000000;
+	background: #000000;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 11000;
+}
+.spinner {
+	/* color: #c7c41c; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.spinner > div {
+	width: 18px;
+	height: 18px;
+	background-color: #c7c41c;
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-bouncedelay 1.0s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.0s infinite ease-in-out both;
+}
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.12s;
+	animation-delay: -0.12s;
+}
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	} 40% { 
+	-webkit-transform: scale(1.0);
+	transform: scale(1.0);
+	}
+}
+/*>======================
+	End Preloader css
+=========================<
