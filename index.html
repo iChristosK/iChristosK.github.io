@@ -793,5 +793,20 @@
         });
       });
     </script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyDR9daTOE6fBFQzZbJCkw7Zbe0kpfO1vHU",
+        authDomain: "portfolio-ichristosk.firebaseapp.com",
+        projectId: "portfolio-ichristosk",
+        storageBucket: "portfolio-ichristosk.appspot.com",
+        messagingSenderId: "562877040037",
+        appId: "1:562877040037:web:0476ca045b6a7389f0944c",
+        measurementId: "G-6T70JQWW1X",
+      };
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
